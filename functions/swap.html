@@ -16,7 +16,7 @@
             Swap Variables Challenge
         </h1>
 
-        <div id="swapping">
+        <div id="app">
             
         </div>
         
@@ -24,8 +24,16 @@
         <script>
             
             // Use prompt function to get input from user:
-            let varOne = prompt("5*2");
-            let varTwo = prompt("6*2");
+            let firstCup= prompt("Enter first variable");
+            let secondCup = prompt("Enter second variable");
+            let thirdCup;
+
+
+            thirdCup = firstCup
+            firstCup = secondCup
+            secondCup = thirdCup
+            
+
 
             // Swapping values:
             /*
@@ -34,18 +42,18 @@
             */
 
             // Printing results:
-            console.log("12: " + varOne);
-            console.log("10: " + varTwo);
+            console.log("The value of firstCup after swapping is: " + firstCup);
+            console.log("The value of secondCup after swapping is: " + secondCup);
 
             // ----- Extra funcitonality to display in DOM for reference ----- //
 
             // get reference to DOM element with id = "app"
-            const appElement = document.getElementById("swapping");
+            const appElement = document.getElementById("app");
 
             // Add strings to innerHTML of element
-            appElement.innerHTML += "5*2: " + varOne;
+            appElement.innerHTML += "The value of fistCup after swapping is: " + firstCup;
             appElement.innerHTML += "<br><br>";
-            appElement.innerHTML += "6*2: " + varTwo;
+            appElement.innerHTML += "The value of secondCup after swapping is: " + secondCup;
 
 
         </script>

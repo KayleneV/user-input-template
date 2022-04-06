@@ -20,6 +20,9 @@
             View the answer in the console
         </div>
 
+        <h2 id="theVAT id">The VAT amount:</h2>
+        <h2 id="myTotal">The Total:</h2>
+
         <!-- Start of Script -->
         <script>
 
@@ -35,6 +38,23 @@
 
             // log VAT out to consol, DOM, or alert
             console.log("The VAT of entered amount is R" + result);
+
+            let theTotal = parseInt(myCupWithPrice) = parseInt(result);
+
+            console.log("The total amount due is: R" + theTotal);
+
+            let theVATAmount = document.getElementById(theVAT);
+            theVATAmount.innerHTML = "The VAT of entered amount is R" + result;
+            console.log(theVATAmount);
+            console.log(theVATAmount.innerHTML);
+
+            console.log("The total amount due is: R" + result);
+
+            let myTotalAmount = document.getElementById(myTotal);
+            myTotalAmount.innerHTML = "The entered amount is R" + result;
+            console.log(myTotalAmount);
+            console.log(myTotalAmount.innerHTML);
+
 
         </script>
         <!-- End of Script -->

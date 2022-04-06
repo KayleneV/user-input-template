@@ -25,19 +25,24 @@
 
         // step 1
         // Create const for conversion
+        let myInputBox;
 
 
         // step 2
         // Get user input and save to variable
+        myInputBox = prompt("Please give km amount");
+        console.log("myInputBox has the content of:" + myInputBox);
 
 
         // step 3
         // Perform calculation and save result
+        let calculationAnswer = myInputBox * 0.621371;
+        console.log(calculationAnswer);
 
 
         // step 4
         // Display result in DOM, alert or console
-        console.log("The distance of " + /*<<input var>>*/ + "km after being converted is " + /*<<result var>>*/ + " in miles");
+        console.log("The distance of " + myInputBox + "km after being converted is " + calculationAnswer + " in miles");
 
         </script>
         <!-- End of Script -->
